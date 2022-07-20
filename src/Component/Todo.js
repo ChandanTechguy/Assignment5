@@ -18,8 +18,8 @@ function Todo() {
         setTask('')
     }
 
-    const deleteItem =(a)=>{
-        const finalData = data.filter((curEle,index)=>{
+    const deleteItem = (a) => {
+        const finalData = data.filter((curEle, index) => {
             return index !== a;
         })
         setData(finalData)
@@ -31,7 +31,7 @@ function Todo() {
                 <div className="col shadow main-col bg-white">
                     <div className="row bg-primary text-white">
                         <div className="col  p-2">
-                            <h4 className='text-center'>Todo App Using React JS</h4>
+                            <h4 className='text-center'><strong>Todo App</strong></h4>
                         </div>
                     </div>
                     <form onSubmit={submitHandler}>
@@ -51,7 +51,9 @@ function Todo() {
                             onSelcet={deleteItem}
                         />
                     })}
-
+                    <button type="submit" className="btn btn-primary mb-2 ml-2 col-2" id='allbt'>All </button>
+                    <button type="submit" className="btn btn-primary mb-2 ml-2 col-3">Active</button>
+                    <button type="submit" className="btn btn-primary mb-2 ml-2 col-5" id='space'>Completed</button>
 
                 </div>
             </div>

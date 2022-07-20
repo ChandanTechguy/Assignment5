@@ -8,3 +8,12 @@
 .todo-done{
     text-decoration: line-through;
 }
+.col{
+    color: rgb(1, 4, 4);
+}
+#allbt{
+    margin-right: 20px;
+}
+#space{
+    margin-left: 20px;
+}
